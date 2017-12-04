@@ -1,0 +1,33 @@
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2em;
+}
+
+h1, h2, h3, h4 {
+  font-size: 3em;
+}
+
+/*a.nav-link {
+  font-size: 3em;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}*/
+
+/*@media (min-width: 992px)*/
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-size: 3em;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 4em;
+    font-size: 3em;
+    line-height: inherit;
+    white-space: nowrap;
+}
