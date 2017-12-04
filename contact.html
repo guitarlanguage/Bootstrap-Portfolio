@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+	<!--<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">-->
 
-<title>Basic Portfolio</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/swatch.css">
+<title>Bootstrap-Portfolio-Contact</title>
 
 <body>
-<!-- ___This will be the top bar going across the length of the page_with mainLogo(your name)
-on the left and right side navigation_______________________________________--->
-		<header>
-		<div class="contentStructure clearfix">
-			<div class= "mainLogo clearfix">
 
-				<h1>Tom LaChance</h1>
-			</div>
 
-			<nav>
-				<ul>
-						<li><a href="index.html">About</a></li>
-  					<li><a href="portfolio.html">Portfolio</a></li>
-  					<li class="contactLeft"><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-		</header>
 <!--  ________________________________________________________________-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html" target="_blank"><h1>Tom LaChance</h1></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" target="_blank"><h3>About Me </h3><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html" target="_blank"><h3>Portfolio</h3></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html" target="_blank"><h3>Contact</h3></a>
+      </li>
+    </ul>
 
-<!--    This will be content container of 960x(included will be the
-left-side mainContent and the right side "sideBar")________________________-->
-		<div class="container clearfix">
+  </div>
+</nav>
 
-<!--_______mainContent on the left side__________________________-->
-			<section class="mainContent clearfix">
+<div class="container">
+		<div class="row">
+      <div class="col-sm-8">
+			  <div class="page-header">
+		  		<h1>About Me</h1>
+				</div>
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Name</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+					</div>
 
-				<h2>Contact</h2>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Email</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="yourname@email.com">
+				</div>
 
-				<article>
-        	<form action="/action_page.php" class="clearfix">
-        	First Name<br>
-        	<input class="formDetailing" type="text" name="firstname">
-        	<br>
-        	Email<br>
-        	<input class="formDetailing" type="text" name="example@gmail.com">
-        	<br>
+				<div class="form-group">
+					<label for="exampleTextarea">Message</label>
+					<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
 
-        <br>
-        Message
-        <textarea class="formMessage" rows="15" cols="50" name="comment" form="usrform">
-          </textarea>
-          <input class="button" type="submit">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>  <!-- close column 8 -->
+		</div>
 
-      </form>
-
-    </article>
-
-
-			</section>
 	<!--_____________________________________________________________-->
 
-
-<!--This will be the right sideBar "Connect With Me" with the social networking icons____
-______________Still a work in progress_______________________________-->
-		<section class="sideBar clearfix">
-			<h3>Connect With Me</h3>
-
-			<article>
-				<a href="https://github.com/guitarlanguage" target="_blank"><img src="assets/images/64x64/if_github_square_black_107109.png"></a>
-				<a href="https://www.linkedin.com/in/thomas-lachance-2287a917/" target="_blank"><img src="assets/images/64x64/if_linkedin_square_color_107091.png"></a>
-				<a href="https://stackoverflow.com/users/7602151/tom-lachance" target="_blank"><img src="assets/images/64x64/if_overflow_334695.png"></a>
-
-			</article>
-
-		</section>
-<!--______________________________________________________-->
-
-
+	<div class="col-sm-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h1>Let's Connect</h1>
+			</div>
+			<div class="panel-body">
+					<a href="https://github.com/guitarlanguage" target="_blank">
+						<img src="assets/images/64x64/if_github_square_black_107109.png" class="social" alt="GitHub"></a>
+					<a href="https://www.linkedin.com/in/thomas-lachance-2287a917/" target="_blank">
+						<img src="assets/images/64x64/if_linkedin_square_color_107091.png" class="social" alt="LinkedIn"></a>
+					<a href="https://stackoverflow.com/users/7602151/tom-lachance">
+						<img target="_blank"><img src="assets/images/64x64/if_overflow_334695.png"class="social" alt="Stack Overflow"></a>
+			</div>
+		</div>
+</div>
+</div>
 </div>
 
-<footer class="clearfix">
-	<p>@ copyright 2017 Tom LaChance</p>
 
+
+<footer class="container-fluid bg-4 text-center">
+ <p>Copyright ©2017 Tom LaChance </p>
 </footer>
-
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 </body>
 </html>

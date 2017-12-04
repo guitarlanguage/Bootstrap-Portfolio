@@ -1,90 +1,108 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-	<link rel="stylesheet"
-	type="text/css" href="assets/css/style.css">
-</head>
+	<!--<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">-->
 
-<title>Basic Portfolio</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/swatch.css">
+<title>Bootstrap-Portfolio-Portfolio</title>
 
 <body>
-<!-- ___This will be the top bar going across the length of the page_with mainLogo(your name)
-on the left and right side navigation_______________________________________--->
-		<header>
-		<div class="contentStructure clearfix">
-			<div class= "mainLogo clearfix">
 
-				<h1>Tom LaChance</h1>
-			</div>
 
-			<nav>
-				<ul>
-						<li><a href="index.html">About</a></li>
-  					<li><a href="portfolio.html">Portfolio</a></li>
-  					<li class="contactLeft"><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-		</header>
 <!--  ________________________________________________________________-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html" target="_blank"><h1>Tom LaChance</h1></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" target="_blank"><h3>About Me </h3><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html" target="_blank"><h3>Portfolio</h3></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html" target="_blank"><h3>Contact</h3></a>
+      </li>
+    </ul>
 
-<!--    This will be content container of 960x(included will be the
-left-side mainContent and the right side "sideBar")________________________-->
-		<div class="container clearfix">
+  </div>
+</nav>
 
-<!--_______mainContent on the left side__________________________-->
-			<section class="mainContent clearfix">
-
-				<h2>Portfolio</h2>
-				<article>
-					<table class="portfolioPics">
-				<!--<img src="https://blog.addthiscdn.com/wp-content/uploads/2016/03/01125908/200-200-pixels.png">-->
-						<tr>
-							<td><img class="portfolioPicsleft" src="http://runjumpdev.org/wp-content/uploads/2016/01/undertale-270x200.jpg"></td>
-							<td><img class="portfolioPicsRight"  src="http://runjumpdev.org/wp-content/uploads/2016/01/undertale-270x200.jpg" align="right"></td>
-						</tr>
-
-						<tr>
-							<td><img class="portfolioPicsleft" src="https://www.whistler.com/images/placeholders/250x200.gif"></td>
-							<td><img class="portfolioPicsRight" src="https://www.whistler.com/images/placeholders/250x200.gif"></td>
-  					</tr>
-
-						<tr>
-							<td><img class="portfolioPicsleft" src="https://www.whistler.com/images/placeholders/250x200.gif"></td>
-							<!--<td><img src="https://blog.addthiscdn.com/wp-content/uploads/2016/03/01125908/200-200-pixels.png"></td>-->
-  					</tr>
-
-
-				</table>
-			</article>
-			</section>
+<div class="container">
+		<div class="row">
+      <div class="col-sm-8">
+			  <div class="page-header">
+		  		<h1>Portfolio</h1>
+				</div>
+		<div class="row">
+		  <div class="col-sm-6">
+				<!-- <img src="https://blog.addthiscdn.com/wp-content/uploads/2016/03/01125908/200-200-pixels.png"> -->
+				<img src="assets/images/technics-q-c-640-480-1.jpg" class="img-responsive thumbnail">
+			</div>
+			<div class="col-sm-6">
+		      <img src="assets/images/technics-q-c-640-480-2.jpg" class="img-responsive thumbnail">
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-6">
+				<!-- <img src="https://blog.addthiscdn.com/wp-content/uploads/2016/03/01125908/200-200-pixels.png"> -->
+				<img src="assets/images/technics-q-c-640-480-5.jpg" class="img-responsive thumbnail">
+			</div>
+			<div class="col-sm-6">
+		      <img src="assets/images/technics-q-c-640-480-7.jpg" class="img-responsive thumbnail">
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-6">
+				<!-- <img src="https://blog.addthiscdn.com/wp-content/uploads/2016/03/01125908/200-200-pixels.png"> -->
+				<img src="assets/images/technics-q-c-640-480-9.jpg" class="img-responsive thumbnail">
+			</div>
+			<div class="col-sm-6">
+		    <!-- empty -->
+		  </div>
+		</div>
+	</div>
 	<!--_____________________________________________________________-->
 
+	<div class="col-sm-4">
+		<div class="panel panel-default">
+			<div class="panel-heading"><h1>Let's Connect</h1></div>
+			<div class="panel-body">
 
-<!--This will be the right sideBar "Connect With Me" with the social networking icons____
-______________Still a work in progress_______________________________-->
-		<section class="sideBar clearfix">
-			<h3>Connect With Me</h3>
-
-			<article>
-				<a href="https://github.com/guitarlanguage" target="_blank"><img src="assets/images/64x64/if_github_square_black_107109.png"></a>
-				<a href="https://www.linkedin.com/in/thomas-lachance-2287a917/" target="_blank"><img src="assets/images/64x64/if_linkedin_square_color_107091.png"></a>
-				<a href="https://stackoverflow.com/users/7602151/tom-lachance" target="_blank"><img src="assets/images/64x64/if_overflow_334695.png"></a>
-
-			</article>
-
-		</section>
-<!--______________________________________________________-->
+		<!-- <section class="sidebar"> -->
 
 
+					<a href="https://github.com/guitarlanguage" target="_blank">
+						<img src="assets/images/64x64/if_github_square_black_107109.png" class="social" alt="GitHub">
+					</a>
+
+
+
+					<a href="https://www.linkedin.com/in/thomas-lachance-2287a917/" target="_blank">
+						<img src="assets/images/64x64/if_linkedin_square_color_107091.png" class="social" alt="LinkedIn">
+					</a>
+
+
+
+					 <a href="https://stackoverflow.com/users/7602151/tom-lachance">
+					<img target="_blank"><img src="assets/images/64x64/if_overflow_334695.png" class="social" alt="Stack Overflow">
+
+
+			</div>
+		</div>
 </div>
 
-<footer class="clearfix">
-	<p>@ copyright 2017 Tom LaChance</p>
 
+<footer class="container-fluid bg-4 text-center">
+ <p>Copyright ©2017 Tom LaChance </p>
 </footer>
-
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 </body>
 </html>
